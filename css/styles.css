@@ -1,4 +1,8 @@
 /* ---------- Toda la página ---------- */
+/* ---------- Desplazamiento suave ---------- */
+html {
+  scroll-behavior: smooth;
+}
 * {
     box-sizing: border-box;
 }
