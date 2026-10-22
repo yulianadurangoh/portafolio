@@ -141,7 +141,26 @@ footer {
   padding: 20px;
 }
 
+/* ---------- Habilidades ---------- */
+.etiquetas {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.etiquetas li {
+  background-color: #e3ecf8;
+  color: #1f3a5f;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
 /* ---------- Celular ---------- */
+
 @media (max-width: 700px) {
   .proyectos-lista {
     grid-template-columns: 1fr;
