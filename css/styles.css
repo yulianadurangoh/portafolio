@@ -1,0 +1,158 @@
+/* ---------- Toda la página ---------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* ---------- Encabezado ---------- */
+
+header {
+    background-color: #1f3a5f;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+}
+
+.subtitulo {
+    color: white;
+    font-size: 18px;
+}
+
+/* ---------- Menú ---------- */
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Contenido principal ---------- */
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+section {
+    background-color: white;
+    padding: 30pk;
+    margin-bottom: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0.08);
+}
+h2 {
+    color: #1f3a5f;
+    margin-top: 0;
+    padding-left: 12px;
+    border-left: 6px solid #a9c6ec;
+}
+h3 {
+    color: #777777;
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* ---------- Experiencia ---------- */
+
+article {
+    background-color: #f7f9fc;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 4px solid #1f3a5f;
+}
+
+.meta {
+    display: inline-block;
+    background-color: #e3ecf8;
+    color: #1f3a5f;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-top: 0;
+}
+
+/* ---------- Proyectos ---------- */
+
+.proyectos-lista {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.proyecto {
+  border-left: none;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+}
+
+.proyecto img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  border-bottom: 1px solid #e0e0e0;
+}
+.proyecto h3,
+.proyecto p {
+  padding: 0 20px;
+}
+.boton {
+  display: inline-block;
+  margin: 0 20px 20px;
+  background-color: #1f3a5f;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.boton:hover {
+  background-color: #2d5a8c;
+}
+
+/* ---------- Pie de página ---------- */
+footer {
+  background-color: #1f3a5f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ---------- Celular ---------- */
+@media (max-width: 700px) {
+  .proyectos-lista {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 8px;
+  }
+}
