@@ -109,6 +109,12 @@ article {
   overflow: hidden;
   background-color: white;
   border: 1px solid #e0e0e0;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.proyecto:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
 .proyecto img {
