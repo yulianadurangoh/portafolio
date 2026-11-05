@@ -9,7 +9,7 @@ html {
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
     background-color: #f2f2f2;
     color: #333333;
     line-height: 1.6;
@@ -59,10 +59,9 @@ main {
 }
 section {
     background-color: white;
-    padding: 30pk;
+    padding: 30px;
     margin-bottom: 30px;
-    border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 h2 {
     color: #1f3a5f;
@@ -81,8 +80,20 @@ h3 {
 article {
     background-color: #f7f9fc;
     padding: 20px;
-    border-radius: 12px;
-    border-left: 4px solid #1f3a5f;
+    margin-bottom: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+ article:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+article h4 {
+    color: #1f3a5f;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .meta {
@@ -90,57 +101,32 @@ article {
     background-color: #e3ecf8;
     color: #1f3a5f;
     padding: 4px 12px;
-    border-radius: 20px;
     font-size: 14px;
     margin-top: 0;
 }
 
-/* ---------- Proyectos ---------- */
-
-.proyectos-lista {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 25px;
-}
-
-.proyecto {
-  border-left: none;
-  padding: 0;
-  overflow: hidden;
-  background-color: white;
-  border: 1px solid #e0e0e0;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.proyecto:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-}
-
-.proyecto img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  object-position: top;
-  display: block;
-  border-bottom: 1px solid #e0e0e0;
-}
-.proyecto h3,
-.proyecto p {
-  padding: 0 20px;
-}
 .boton {
   display: inline-block;
-  margin: 0 20px 20px;
+  margin: 10px 10px 0 0;
   background-color: #1f3a5f;
   color: white;
   padding: 10px 22px;
-  border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
+  border: 2px solid #1f3a5f;
 }
 .boton:hover {
   background-color: #2d5a8c;
+}
+
+.boton-codigo {
+  background-color: white;
+  color: #1f3a5f;
+  border: 2px solid #1f3a5f;
+}
+
+.boton-codigo:hover {
+  background-color: #e3ecf8;
 }
 
 /* ---------- Pie de página ---------- */
@@ -151,6 +137,15 @@ footer {
   padding: 20px;
 }
 
+footer a {
+  color: white;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  color: #a9c6ec;
+}
 /* ---------- Habilidades ---------- */
 .etiquetas {
   list-style: none;
@@ -164,18 +159,22 @@ footer {
   background-color: #e3ecf8;
   color: #1f3a5f;
   padding: 8px 16px;
-  border-radius: 20px;
   font-weight: bold;
   font-size: 14px;
+}
+
+/* ---------- Grupos de actividades ---------- */
+
+.grupo {
+  color: #1f3a5f;
+  font-size: 20px;
+  font-style: normal;
+  margin-top: 30px;
 }
 
 /* ---------- Celular ---------- */
 
 @media (max-width: 700px) {
-  .proyectos-lista {
-    grid-template-columns: 1fr;
-  }
-
   section {
     padding: 20px;
   }
